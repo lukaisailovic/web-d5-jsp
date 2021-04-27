@@ -30,22 +30,22 @@
                     Haker <%= i+1 %>
                 </h4>
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="clanovi_ime[]" placeholder="Ime">
+                    <input type="text" class="form-control"  name="clanovi_ime" placeholder="Ime">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="clanovi_prezime[]" placeholder="Prezime">
+                    <input type="text" class="form-control"  name="clanovi_prezime" placeholder="Prezime">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="clanovi_email[]" placeholder="Email">
+                    <input type="text" class="form-control"  name="clanovi_email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="clanovi_brucesca[]" placeholder="Broj ucesca na hakatonima">
+                    <input type="text" class="form-control"  name="clanovi_brucesca" placeholder="Broj ucesca na hakatonima">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="clanovi_uloga[]" placeholder="Uloga u timu">
+                    <input type="text" class="form-control"  name="clanovi_uloga" placeholder="Uloga u timu">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control"  name="clanovi_ln[]" placeholder="Link ka LinkedIn profilu">
+                    <input type="text" class="form-control"  name="clanovi_ln" placeholder="Link ka LinkedIn profilu">
                 </div>
                 <%}%>
 
