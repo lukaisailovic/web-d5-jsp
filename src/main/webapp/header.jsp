@@ -1,3 +1,3 @@
 <style>
-    <jsp:include page="WEB-INF/css/style.css"/>
+    <jsp:include page="css/style.css"/>
 </style>
