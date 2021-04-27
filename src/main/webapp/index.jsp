@@ -7,9 +7,13 @@
 
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<%@include file="navbar.jsp"%>
+
+<div class="container">
 </h1>
+    <h1><%= "Hello World!" %>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
+</div>
 </body>
 </html>
