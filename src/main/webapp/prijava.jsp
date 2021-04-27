@@ -12,6 +12,15 @@
 <div class="container">
     <div class="row justify-content-center ">
         <div class="col-md-6 text-center">
+
+
+            <%
+                if (session.getAttribute("team_name") != null){
+            %>
+                <div class="alert alert-danger">
+                    Vec ste prijavili tim <%=session.getAttribute("team_name")%>. Ne mozete napraviti vise od jedne prijave.
+                </div>
+            <%}%>
             <h4>
                 Podaci o timu
             </h4>
