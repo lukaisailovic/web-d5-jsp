@@ -14,10 +14,11 @@ public class TeamSubmitServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String path = getServletContext().getRealPath("submissions");
+        String fileName = path+"/tim_"+req.getParameter("ime")+"_"+System.currentTimeMillis()+".txt";
+        PrintWriter writer = new PrintWriter(fileName);
         try{
-            String path = getServletContext().getRealPath("submissions");
-            String fileName = path+"/tim_"+req.getParameter("ime")+"_"+System.currentTimeMillis()+".txt";
-            PrintWriter writer = new PrintWriter(fileName);
+
             writer.println("PODACI O TIMU");
             writer.println("Ime: "+req.getParameter("ime"));
             writer.println("Email: "+req.getParameter("email"));
@@ -49,9 +50,10 @@ public class TeamSubmitServlet extends HttpServlet {
                 writer.println("");
             }
 
-            writer.close();
         } catch (Exception e){
             System.out.println(e);
+        } finally {
+            writer.close();
         }
 
     }
